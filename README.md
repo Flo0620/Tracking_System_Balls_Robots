@@ -27,3 +27,18 @@ source install/setup.zsh
 ```
 ros2 launch launch_tracking_system.xml
 ```
+
+## Configure the system
+There are some parameters that can be changed. For the Ball Detection System the radius of the balls that should be tracked is needed and the confidence threshold, the nms threshold and the number of balls that are expected in the image, if this is known, can be changed. To do that the parameters can be set in src/ball_detection/ball_detection/config_and_weights/ball_detector_config.py.
+
+To add new AprilTags, for instance with a new size or id, but also to use a different tag family at src/apriltag_ros/apriltag_ros/cfg/ a new yaml file for a new tag family have to be created or the existing yaml-files have to be adjusted for the new AprilTags that should be used.
+In src/apriltag_ros/apriltag_ros/launch/tag_realsense.launch.py the adjusted yaml-file has to be selected. 
+
+The camera calibration matrix can be changed in src/bitbots_ceiling_cam/config/camera_calibration_ceiling_cam.yaml.
+
+## Sources
+AprilTag Detection: https://github.com/AprilRobotics
+
+Camera: https://github.com/bit-bots/bitbots_meta
+
+YOLO: https://github.com/eriklindernoren/PyTorch-YOLOv3
