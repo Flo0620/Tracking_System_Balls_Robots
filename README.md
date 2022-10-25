@@ -36,6 +36,14 @@ In src/apriltag_ros/apriltag_ros/launch/tag_realsense.launch.py the adjusted yam
 
 The camera calibration matrix can be changed in src/bitbots_ceiling_cam/config/camera_calibration_ceiling_cam.yaml.
 
+## Scripts
+In the scripts directory you can find a few scripts which might be useful.
+1. Evaluation scripts to evaluate the error of the yystem for robots and balls, which compare the detected pose with a given pose that was measured by hand.
+2. The ImageReader.py script saves images from the ceiling camera at a preset rate, which enables the recording of a dataset.
+3. labelGenerator.py can create a test.txt and train.txt file which are needed to define which images should be used for training and which for validation. Additionally the script is able to create the txt files that contains the labels for the associated image from one long file which contains all annotations of all images.
+4. cameraCalibration.py can be used to calibrate the camera.
+5. imgAugmentation.py can be applied to a directory containing a dataset and creates augmentated images for each image in the directory together with the label txt files. An image is mirrored horizontally and vertically and it is brightend and darkend. By that for each image in the dataset 11 new augmented images are created.
+
 ## Sources
 AprilTag Detection: https://github.com/AprilRobotics
 
