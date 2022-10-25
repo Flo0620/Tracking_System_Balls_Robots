@@ -48,6 +48,7 @@ In the scripts directory you can find a few scripts which might be useful.
 AprilTag Detection: https://github.com/AprilRobotics
 
 Camera: https://github.com/bit-bots/bitbots_meta
+
 Pylon-ros-camera: https://github.com/basler/pylon-ros-camera/tree/galactic
 
 YOLO: https://github.com/eriklindernoren/PyTorch-YOLOv3
