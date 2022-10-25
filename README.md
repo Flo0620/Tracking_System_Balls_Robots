@@ -40,5 +40,6 @@ The camera calibration matrix can be changed in src/bitbots_ceiling_cam/config/c
 AprilTag Detection: https://github.com/AprilRobotics
 
 Camera: https://github.com/bit-bots/bitbots_meta
+Pylon-ros-camera: https://github.com/basler/pylon-ros-camera/tree/galactic
 
 YOLO: https://github.com/eriklindernoren/PyTorch-YOLOv3
