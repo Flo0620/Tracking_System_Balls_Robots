@@ -45,7 +45,7 @@ In the scripts directory you can find a few scripts which might be useful.
 5. imgAugmentation.py can be applied to a directory containing a dataset and creates augmented images for each image in the directory together with the label txt files. An image is mirrored horizontally and vertically and it is brightened and darkened. By that for each image in the dataset 11 new augmented images are created.
 
 ## Sources
-AprilTag Detection: https://github.com/AprilRobotics
+AprilTag Detection: https://github.com/AprilRobotics and https://github.com/Adlink-ROS/apriltag_ros
 
 Camera: https://github.com/bit-bots/bitbots_meta
 
